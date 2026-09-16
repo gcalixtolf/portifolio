@@ -1,105 +1,85 @@
 * {
-    margin: 0px;
+    margin: 0;
     padding: 0;
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
     box-sizing: border-box;
-    }
-    
-    .cabecalho {
+}
+
+.cabecalho {
     display: flex;
     background-color: #152238;
-    height: 40px;
+    height: 70px;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    }
-    
-    .links {
+    padding: 0 30px;
+}
+
+.links {
     display: flex;
     gap: 50px;
-    }
-    
-    a {
+}
+
+.links a {
     text-decoration: none;
     font-size: 20px;
     color: white;
-    }
-    
-    #nome-loja {
+}
+
+#nome-loja {
     color: white;
     font-size: 30px;
-    }
-    
-    .banner {
-    background-color: #2563eb;
+}
+
+.banner {
+    background: linear-gradient(
+        120deg,
+        blue,
+        rgb(255, 255, 255),
+        blue
+    );
+
     height: 40vh;
-    text-align: center;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    gap: 10px;
-    }
-    
-    .banner h2 {
-    font-size: 40px;
-    }
-    
-    .botao {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: blue;
-    cursor: pointer;
-    }
-    
-    .produto {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    gap: 15px;
-    min-height: 450px;
-    transition: 0.5s;
-    }
-    
-    .produto p {
-    text-align: center;
-    }
-    
-    .produto img {
-    width: 200px;
+
+    gap: 50px;
+    padding-left: 10%;
+}
+
+#fotominha {
+    border-radius: 50%;
+    width: 180px;
     height: 180px;
-    }
-    
-    .produto button {
-    padding: 10px;
-    width: 80%;
-    cursor: pointer;
-    background-color: #2563eb;
-    color: white;
-    font-weight: bold;
-    border-style: none;
-    border-radius: 10px;
-    transition: 0.5s;
-    }
-    
-    .produto button:hover {
-    transform: scale(1.01);
-    }
-    
-    .produto:hover {
-    transform: scale(1.01);
-    }
-    
-    .preco {
-    color: #2563eb;
-    font-weight: bold;
-    }
-    
-    .produtos {
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#divbanner {
+    text-align: left;
+}
+
+#divbanner h1 {
+    font-size: 45px;
+    margin: 5px 0;
+}
+
+#divbanner p {
+    font-size: 20px;
+}
+
+.catalogo {
+    padding: 60px 8%;
+}
+
+.catalogo h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.produtos {
     display: flex;
     gap: 40px;
     align-items: center;
@@ -107,27 +87,70 @@
     flex-wrap: wrap;
     max-width: 980px;
     margin: 0 auto;
-    }
-    
-    .catalogo {
-    padding: 60px 8%;
-    }
-    
-    .catalogo h2 {
+}
+
+.produto {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+    min-height: 300px;
+    padding: 20px;
+
+    transition: 0.5s;
+}
+
+.produto p {
     text-align: center;
-    }
-    
-    .rodape {
+}
+
+.produto img {
+    width: 200px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.produto button {
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.produto button:hover {
+    transform: scale(1.01);
+}
+
+.produto:hover {
+    transform: scale(1.01);
+}
+
+.preco {
+    color: #000000;
+    font-weight: bold;
+}
+
+.rodape {
     background-color: #152238;
     display: flex;
     justify-content: space-between;
     padding: 40px 8%;
-    }
-    
-    .rodape h3 {
+}
+
+.rodape h3 {
     color: #2563eb;
-    }
-    
-    .rodape p {
+}
+
+.rodape p {
     color: white;
-    }
+}
